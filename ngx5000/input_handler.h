@@ -4,6 +4,8 @@
 #include"com.h"
 #include"commands.h"
 
+using namespace CMD;
+
 namespace CMD
 {
 	class Input_handler
@@ -12,9 +14,14 @@ namespace CMD
 		Input_handler(void);
 		~Input_handler(void);
 
-		Com read(void);
-	private:
+		bool is_empty(void)
+		{ return length == 0; }
 
+		bool read(void);
+	private:
+		int length;
+
+		Commands* queue;
 	};
 }
 

@@ -8,5 +8,5 @@ Input_handler::Input_handler(void)
 Input_handler::~Input_handler(void)
 {}
 
-com Input_handler::read(void)
+Com Input_handler::read(void)
 {}
